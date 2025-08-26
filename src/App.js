@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/Navbar.js";
 import { BrowserRouter, RouterProvider } from "react-router-dom";
