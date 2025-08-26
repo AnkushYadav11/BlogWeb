@@ -1,28 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/Navbar.js";
-import { BrowserRouter, RouterProvider } from "react-router-dom";
+import Home from './components/Home.js';
+import {Route, Routes } from "react-router-dom";
+import About from './components/About.js';
+import Contact from './components/Contact.js';
+import Help from './components/Help.js';
+
 
 function App() {
-  const router = BrowserRouter([
-    {
-      path:"/",
-      element : <Home/>
-    },
-    {
-      path:"/about",
-      element : <About/>
-    },
-    {
-      path : "/contact",
-      element : <Contact/>
-    }
-  ]);
-
   return (
   <>
-    <RouterProvider router={router}/>
-    <Navbar/>
+    <Navbar title = "Welcome"/>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/about' element={<About/>}></Route>
+      <Route path='/contact' element={<Contact/>}></Route>
+      <Route path='/help' element={<Help/>}></Route>
+    </Routes>
   </>
   );
 }
