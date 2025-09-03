@@ -5,9 +5,11 @@ import {Route, Routes } from "react-router-dom";
 import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Help from './components/Help.js';
+import Admin from './components/Admin.js';
 
 
 function App() {
+  
   return (
   <>
     <Navbar title = "Welcome"/>
@@ -16,6 +18,7 @@ function App() {
       <Route path='/about' element={<About/>}></Route>
       <Route path='/contact' element={<Contact/>}></Route>
       <Route path='/help' element={<Help/>}></Route>
+      <Route path='/admin' element={<Admin/>}></Route>
     </Routes>
   </>
   );
