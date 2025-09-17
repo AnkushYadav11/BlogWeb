@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from "./components/Navbar.js";
+import { Recent } from './components/Recent.js';
 import Home from './components/Home.js';
 import {Route, Routes } from "react-router-dom";
 import About from './components/About.js';
@@ -13,6 +14,7 @@ function App() {
   return (
   <>
     <Navbar title = "Welcome"/>
+    <Recent/>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/about' element={<About/>}></Route>

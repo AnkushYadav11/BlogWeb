@@ -1,42 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-export default function Navbar(props) {
-  
+import Logo from '../images/logo.svg'
+import Search from '../images/search.svg'
+export default function Navbar(props) {  
   return(
   <>
-    <nav className="navbar navbar-expand-lg bg-dark text-white">
-  <div className="container-fluid">
-    <Link className="navbar-brand text-white" to="/">{props.title}</Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">      
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <Link className="nav-link active text-white" aria-current="page" to="/">Home</Link>
-        </li>  
-      
-        <li className="nav-item">
-          <Link className="nav-link active text-white" aria-current="page" to="/about">About</Link>
-        </li>
-      
-        <li className="nav-item">
-          <Link className="nav-link active text-white" aria-current="page" to="/contact">Contact</Link>
-        </li>
-      
-        <li className="nav-item">
-          <Link className="nav-link active text-white" aria-current="page" to="/help">Help</Link>
-        </li>  
-      </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <div className='border pl-8 pr-8 flex justify-between rounded bg-linear-to-t  from-gray-100 to-white-100'>
+     
+      <div className='p-1 flex *:w-7'>
+        <img src={Logo} alt="Logo" />
+      </div>
+     
+      <div className='flex '>
+        <ul className='flex m-2 *:mr-3 ml-3 *:hover:underline'>
+          <li>LifeStyle</li>
+          <li>Travaling</li>
+          <li>Food</li>
+          <li>Study</li>
+          <li>Work</li>
+        </ul>
+      </div>
+     
+      <div>
+        <img src={Search} alt="Search" className='m-2 w-5 hover:shadow-lg hover:shadow-blue-2xl rounded' />
+      </div>
     </div>
-  </div>
-</nav>
   </>
   );
 }

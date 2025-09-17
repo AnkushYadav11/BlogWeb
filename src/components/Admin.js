@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
 function Admin() {
-  const [topics, setTopics] = useState([
-  ]);
+  const [topics, setTopics] = useState([]);
   const [newHeading, setNewHeading] = useState('');
   const [newContent, setNewContent] = useState('');
   const [editingId, setEditingId] = useState(null);

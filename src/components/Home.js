@@ -1,15 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 const Home = () => {
   return (
     <>
-    <div className="border-5">
-    <span className="border-5 border-style-dotted bg-black">
-      <ul className="nav-link">
-        <Link><li>Java</li></Link>
-        <Link><li>JavaScript</li></Link>
-      </ul>
-    </span>
+    <div className='flex h-500 border *:border'>
+      <div className='w-30 justify-center flex'>Heding</div>
+      <div className='grow flex justify-center '>Content </div>
     </div>
     </>
   );
