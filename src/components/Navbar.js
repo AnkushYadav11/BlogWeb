@@ -4,7 +4,7 @@ import Search from '../images/search.svg'
 export default function Navbar(props) {  
   return(
   <>
-    <div className='border pl-8 pr-8 flex justify-between rounded bg-linear-to-t  from-gray-100 to-white-100'>
+    <div className='pl-8 pr-8 p-1 flex justify-between rounded bg-linear-to-t from-gray-100 to-white-100 shadow-lg shadow-gray-200'>
      
       <div className='p-1 flex *:w-7'>
         <img src={Logo} alt="Logo" />
