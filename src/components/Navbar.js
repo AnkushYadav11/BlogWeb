@@ -6,12 +6,12 @@ export default function Navbar(props) {
   <>
     <div className='pl-8 pr-8 p-1 flex justify-between rounded bg-linear-to-t from-gray-100 to-white-100 shadow-lg shadow-gray-200'>
      
-      <div className='p-1 flex *:w-7'>
+      <div className='p-1 flex *:w-7 hover:shadow-lg rounded-xl'>
         <img src={Logo} alt="Logo" />
       </div>
      
-      <div className='flex '>
-        <ul className='flex m-2 *:mr-3 ml-3 *:hover:underline'>
+      <div className='flex'>
+        <ul className='flex gap-8 m-2 *:hover:underline'>
           <li>LifeStyle</li>
           <li>Travaling</li>
           <li>Food</li>
